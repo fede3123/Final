@@ -1,0 +1,32 @@
+*{
+    background-color: paleturquoise;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+section {
+    display: grid;
+    width: 100%;
+    max-width: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+h1{
+    place-self: center;
+}
+div{
+    place-self: center;
+}
+
+sub{
+    border: none;
+}
+
+#uploadfile{
+    color:transparent;
+}
+
+#Sign{
+    color:transparent;
+}

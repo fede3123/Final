@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta charset="UTF-8"/>
     <title>Federico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./index.css' ) }}">
 </head>
 <body>
-    <h1>Upload file</h1>
-    <div>
-        <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" id="uploadfile" name="uploadfile" accept=".jpg .png">
-            <input type="submit">
-        </form>
-    </div>
-
+    <section>
+        <h1>neumonia model</h1>
+        <div>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" id="uploadfile" name="uploadfile" accept=".jpg .png">
+                <input type="submit" class="sub">
+            </form>
+        </div>
+        <h1>Sign model</h1>
+        <div>
+            <form action="/Sign" method="POST" enctype="multipart/form-data">
+                <input type="file" id="Sign" name="Sign" accept=".jpg .png">
+                <input type="submit" class="sub">
+            </form>
+        </div>
+    </section>
 </body>
 </html>

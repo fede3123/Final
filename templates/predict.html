@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./predict.css' ) }}">
+
 </head>
 <body>
-    <h1>{{ predict }}</h1>
-    <div>
-        <a href="index.html">Back</a>
-    </div>
+    <section>
+        <h1>The result is:</h1>
+        {{% if predict == '[[1]]'%}}
+            <h2>Pnuemoni detected</h2>>
+        {{% if predict == '[[0]]'%}}
+            <h2>Pneumoni not has detected</h2>
+        <div>
+            <a href="/">Back</a>
+        </div>
+    </section>
+
 </body>
 </html>
